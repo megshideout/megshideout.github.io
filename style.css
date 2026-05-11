@@ -37,6 +37,7 @@
     [data-theme="dark"] nav { background: rgba(10,10,10,0.92); color: var(--text); transition: background 0.4s ease, color 0.4s ease; }
     [data-theme="dark"] .featured { background: var(--gray); transition: background 0.4s ease, color 0.4s ease;}
     [data-theme="dark"] .btn-ghost { color: var(--text); border-color: var(--border); transition: background 0.4s ease, color 0.4s ease;}
+    [data-theme="dark"] .hero-chip{background: var(--gray); transition: background 0.4s ease, color 0.5s ease;}
 
     /* ── NAV ── */
     nav {
@@ -95,7 +96,7 @@
       display: inline-flex; align-items: center; gap: 0.5rem;
       font-size: 0.72rem;
       font-weight: 500;
-      color: var(--mid);
+      color: var(--text);
       background: var(--gray);
       padding: 0.3rem 0.75rem;
       border-radius: 100px;
