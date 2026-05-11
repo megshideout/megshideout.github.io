@@ -290,13 +290,16 @@
 
     .featured-grid {
       display: grid;
-      grid-template-columns: 55fr 45fr;
+      padding-left:10%;
+      grid-template-columns: 45fr 55fr;
       gap: 4rem;
       align-items: center;
     }
 
     .feat-img {
       overflow: hidden;
+      grid-column: 2; /* Forces image to the second column */
+      order: 2;
       border-radius: 6px;
       aspect-ratio: 4/3;
       opacity: 0; transform: translateX(-16px);
