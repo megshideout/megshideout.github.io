@@ -546,7 +546,7 @@
       .stat:nth-child(3) { grid-column: 1/-1; border-right: none; border-top: 1px solid var(--border); }
       .gallery, .featured, .about, .contact { padding-left: 1.5rem; padding-right: 1.5rem; }
       .gallery-grid { grid-template-columns: 1fr 1fr; }
-      .g-item:nth-child(n) { grid-column: auto; aspect-ratio: 4/3; }
+      .g-item:nth-child(n) { grid-column: auto; aspect-ratio: auto !important; }
       .featured-grid { grid-template-columns: 1fr; padding-left: 0; gap: 2rem; }
       .feat-img { grid-column: 1; order: 1; width: 100%; transform: translateY(14px); }
       .feat-text { grid-column: 1; order: 2; transform: translateY(14px); }
