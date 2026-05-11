@@ -6,20 +6,37 @@
       --gray:  #f5f5f5;
       --mid:   #888888;
       --border: #e8e8e8;
+      --button: var(--black);
+      --bg: var(--white);
+      --text: var(--black);
+      --hober: #333;
       --sans: 'Stack Sans Headline', system-ui, sans-serif;
       --serif: 'Stack Sans Headline', Georgia, serif;
-    }
+}
+    [data-theme="dark"] {
+      --bg: #0a0a0a;
+      --text: #f0f0f0;
+      --button: #f5f5f5;
+      --gray: #121212;
+      --border: #616161;
+      --hober: #a0a0a0;
+      --mid: #666666;
+}
 
     html { scroll-behavior: smooth; font-size: 16px; }
 
     body {
-      background: var(--white);
-      color: var(--black);
+      background: var(--bg);
+      color: var(--text);
       font-family: var(--sans);
       font-weight: 400;
       overflow-x: hidden;
       -webkit-font-smoothing: antialiased;
+      transition: background 0.3s ease, color 0.3s ease;
     }
+    [data-theme="dark"] nav { background: rgba(10,10,10,0.92); color: var(--text); transition: background 0.4s ease, color 0.4s ease; }
+    [data-theme="dark"] .featured { background: var(--gray); transition: background 0.4s ease, color 0.4s ease;}
+    [data-theme="dark"] .btn-ghost { color: var(--text); border-color: var(--border); transition: background 0.4s ease, color 0.4s ease;}
 
     /* ── NAV ── */
     nav {
@@ -37,9 +54,9 @@
     }
     .nav-logo {
       font-family: var(--serif);
+      color: var(--text);
       font-size: 1.1rem;
       font-style: italic;
-      color: var(--black);
       text-decoration: none;
     }
     .nav-links {
@@ -57,7 +74,7 @@
     }
     .nav-links a:hover {
       background: var(--gray);
-      color: var(--black);
+      color: var(--text);
     }
 
     /* ── HERO ── */
@@ -90,7 +107,7 @@
     .hero-chip::before {
       content: '';
       width: 6px; height: 6px;
-      background: var(--black);
+      background: var(--text);
       border-radius: 50%;
       display: block;
     }
@@ -137,13 +154,13 @@
       border: 1px solid transparent;
     }
     .btn-primary {
-      background: var(--black);
-      color: var(--white);
+      background: var(--button);
+      color: var(--bg);
       border-color: var(--black);
     }
     .btn-primary:hover {
-      background: #333;
-      border-color: #333;
+      background: var(--hober);
+      border-color: var(--black);
     }
     .btn-ghost {
       background: transparent;
@@ -166,6 +183,19 @@
       transform: scale(1.04);
       animation: zoomOut 1.4s cubic-bezier(0.25,0.46,0.45,0.94) forwards;
     }
+    .nav-icon-btn {
+      background: none;
+      border: none;
+      cursor: pointer;
+      color: var(--mid);
+      font-size: 1.1rem;
+      padding-left: 5px;
+      transition: color 0.3s ease;
+    }
+
+    .nav-icon-btn:hover { color: var(--text);}
+
+
     @keyframes zoomOut { to { transform: scale(1); } }
 
     /* ── STATS ROW ── */
@@ -213,9 +243,9 @@
     }
 
     .gallery-grid {
-      column-count: 2;
-      column-gap: 0.75rem;
-      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
     }
 
     .g-item {
@@ -237,6 +267,8 @@
       width: 100%;
       height: auto;
       display: block;
+      transform: scale(1);
+      transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     }
     .g-item:hover img { transform: scale(1.03); }
 
