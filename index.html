@@ -20,6 +20,7 @@
       <li><a href="#gallery">Work</a></li>
       <li><a href="#about">About</a></li>
       <li><a href="#contact">Contact</a></li>
+      <li><button onclick="toggleTheme()" class="nav-icon-btn">◑</button></li>
     </ul>
   </nav>
 
@@ -63,7 +64,7 @@
   <section class="gallery" id="gallery">
     <div class="section-header">
       <span class="section-title">Selected shots</span>
-      <a href="#contact" class="btn btn-ghost" style="font-size:0.78rem; padding: 0.45rem 1rem;">Get in touch →</a>
+<a href="./gallery" class="btn btn-ghost" style="font-size:0.78rem; padding: 0.45rem 1rem;">See All →</a>
     </div>
     <div class="gallery-grid">
 
@@ -250,6 +251,19 @@
     document.getElementById('lbClose').addEventListener('click', closeLb);
     lb.addEventListener('click', e => { if (e.target === lb) closeLb(); });
     document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLb(); });
+    document.addEventListener('contextmenu', e => { if (e.target.tagName === 'IMG') e.preventDefault(); });
+    document.addEventListener('dragstart', e => { if (e.target.tagName === 'IMG') e.preventDefault(); });
+    const toggleTheme = () => {
+      const html = document.documentElement;
+      const isDark = html.getAttribute('data-theme') === 'dark';
+      const target = isDark ? 'light' : 'dark';
+  
+      html.setAttribute('data-theme', target);
+      localStorage.setItem('theme', target);
+    };
+
+    const savedTheme = localStorage.getItem('theme') || 'light';
+    document.documentElement.setAttribute('data-theme', savedTheme);
   </script>
 </body>
 </html>
