@@ -1,1 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ryen's Hideout</title>
+  <link rel="icon" type="image/png" href="./assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Stack+Sans+Headline:wght@200..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <a href="#" class="nav-logo">Ryen's Hideout</a>
+    <ul class="nav-links">
+      <li><a href="#gallery">Work</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><button onclick="toggleTheme()" class="nav-icon-btn">◑</button></li>
+    </ul>
+  </nav>
+  <section class="gallery">
+    <div class="gallery-grid" id="auto-grid"></div>
+  </section>
 
+  <div id="loading" style="text-align:center; padding: 2rem; color: var(--mid);">Fetching archive...</div>
+
+   <!-- LIGHTBOX -->
+  <div class="lb" id="lb">
+    <button class="lb-close" id="lbClose">✕ Close</button>
+    <div class="lb-img-wrap">
+      <img src="" alt="" id="lbImg" />
+      <p class="lb-caption" id="lbCap"></p>
+    </div>
+  </div>
