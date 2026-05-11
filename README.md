@@ -5,17 +5,15 @@ Personal Portfolio for my Photography journey.
 ---
 
 ### 🛠 Key Features
-* **Architecture:** Static HTML5 / CSS3 (Custom Grid + Flexbox)
-* **Typography:** Stack Sans Headline (Editorial) & DM Mono (Technical/Robotic)
-* **Performance:** Intersection Observer API for staggered "Reveal" animations
+* **Architecture:** Static HTML5 / CSS3
+* **Typography:** Stack Sans Headline & DM Mono
+* **Performance:** Intersection Observer API for fluent reveal animations
 * **Asset Pipeline:** Web-optimized JPEG exports from Adobe Lightroom (sRGB)
-
-### 📸 Featured Series: "Margins of the Sea"
-A collection focused on the Sfax coastline, utilizing minimalist frames and warm "pastel" color grading. 
+  
 
 ### ⚙️ Logic
 * **Responsive Grid:** Hybrid system using CSS Grid for the hero and Flexbox for series highlights.
-* **Lightbox:** Custom JavaScript implementation for immersive viewing without external libraries.
+* **Lightbox:** Removes the need for external libraries.
 * **Mobile First:** Adaptive breakpoints for seamless viewing on handheld devices.
 
 ###This was made for personal use only. If you found it interesting consider supporing me [here](https://buymeacoffee.com/megumi_bruh)
