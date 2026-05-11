@@ -22,4 +22,4 @@ Personal Portfolio for my Photography journey.
 * **Lightbox:** Removes the need for external libraries.
 * **Mobile First:** Adaptive breakpoints for seamless viewing on handheld devices.
 
-### This was made for personal use only. If you found it interesting consider supporing me [here](https://buymeacoffee.com/megumi_bruh)
+### This project was made for personal use only. If you found it interesting consider supporting me [here](https://buymeacoffee.com/megumi_bruh)
