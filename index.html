@@ -298,7 +298,7 @@
 
     .feat-img {
       overflow: hidden;
-      grid-column: 2; /* Forces image to the second column */
+      grid-column: 2;
       order: 2;
       border-radius: 6px;
       aspect-ratio: 4/3;
@@ -316,6 +316,8 @@
     .feat-text {
       opacity: 0; transform: translateX(16px);
       transition: opacity 0.7s ease 0.1s, transform 0.7s ease 0.1s;
+      grid-column: 1;
+      order: 1;
     }
     .feat-text.in { opacity: 1; transform: translateX(0); }
 
