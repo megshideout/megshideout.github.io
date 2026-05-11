@@ -1,5 +1,5 @@
 # 🐚 MegsHideout — Portfolio v1.0
-Personal Portfolio for my Photography journey
+Personal Portfolio for my Photography journey. 
 [Live Demo](https://megshideout.github.io/)
 
 ---
@@ -17,3 +17,5 @@ A collection focused on the Sfax coastline, utilizing minimalist frames and warm
 * **Responsive Grid:** Hybrid system using CSS Grid for the hero and Flexbox for series highlights.
 * **Lightbox:** Custom JavaScript implementation for immersive viewing without external libraries.
 * **Mobile First:** Adaptive breakpoints for seamless viewing on handheld devices.
+
+###This was made for personal use only. If you found it interesting consider supporing me [here](https://buymeacoffee.com/megumi_bruh)
