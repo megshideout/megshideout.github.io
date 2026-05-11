@@ -1,4 +1,4 @@
-# 🐚 MegsHideout — Portfolio v1.0
+# 📷 MegsHideout — Portfolio v1.0
 Personal Portfolio for my Photography journey. 
 [Live Demo](https://megshideout.github.io/)
 
