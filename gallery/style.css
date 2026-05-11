@@ -619,6 +619,7 @@
       .feat-img.in, .feat-text.in { transform: translateY(0); opacity: 1; }
       .about { grid-template-columns: 1fr; gap: 2rem; }
       footer { padding: 1.25rem 1.5rem; }
+      .album-row {grid-template-columns: 1fr !important; gap: 1.5rem !important; }
     }
     @media (max-width: 600px) {
       .gallery-grid { grid-template-columns: 1fr; }
