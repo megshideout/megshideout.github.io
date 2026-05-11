@@ -1,8 +1,14 @@
-# 📷 MegsHideout — Portfolio v2
+# 📷 MegsHideout — Portfolio v2.1
 Personal Portfolio for my Photography journey. 
 [Live Demo](https://megshideout.github.io/)
 
 ---
+### What's changed?
+* Added Dark mode
+* New Gallery Archive section
+* Improved animations, stability and logic
+* Fixed Ui for mobile devices
+
 
 ### 🛠 Key Features
 * **Architecture:** Static HTML5 / CSS3
