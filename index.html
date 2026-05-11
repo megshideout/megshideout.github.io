@@ -525,7 +525,10 @@
       .gallery, .featured, .about, .contact { padding-left: 1.5rem; padding-right: 1.5rem; }
       .gallery-grid { grid-template-columns: 1fr 1fr; }
       .g-item:nth-child(n) { grid-column: auto; aspect-ratio: 4/3; }
-      .featured-grid { grid-template-columns: 1fr; gap: 2rem; }
+      .featured-grid { grid-template-columns: 1fr; padding-left: 0; gap: 2rem; }
+      .feat-img { grid-column: 1; order: 1; width: 100%; transform: translateY(14px); }
+      .feat-text { grid-column: 1; order: 2; transform: translateY(14px); }
+      .feat-img.in, .feat-text.in { transform: translateY(0); opacity: 1; }
       .about { grid-template-columns: 1fr; gap: 2rem; }
       footer { padding: 1.25rem 1.5rem; }
     }
